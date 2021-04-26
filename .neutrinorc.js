@@ -11,7 +11,8 @@ module.exports = {
     react({
       html: {
         title: 'tictactoe'
-      }
+      },
+      publicPath: ''
     }),
     jest(),
   ],
