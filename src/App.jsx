@@ -1,11 +1,11 @@
 import { hot } from 'react-hot-loader'
 import React from 'react'
 import './App.css'
+import TicTacToe from './TicTacToe/TicTacToe'
 
-const message = 'Welcome to tictactoe'
 const App = () => (
   <div className='App'>
-    <h1>{message}</h1>
+    <TicTacToe />
   </div>
 )
 

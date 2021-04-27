@@ -20,6 +20,7 @@
     "react-hot-loader": "^4"
   },
   "devDependencies": {
+    "@material-ui/core": "^4.11.3",
     "@neutrinojs/jest": "^9.5.0",
     "@neutrinojs/react": "^9.5.0",
     "@neutrinojs/standardjs": "^9.5.0",
