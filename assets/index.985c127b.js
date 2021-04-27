@@ -1,1 +1,0 @@
-(window.webpackJsonp=window.webpackJsonp||[]).push([[0],{3:function(e,t,n){e.exports=n(8)},8:function(e,t,n){"use strict";n.r(t);var c=n(0),a=n.n(c),o=n(2);var r=()=>a.a.createElement("div",{className:"App"},a.a.createElement("h1",null,"Welcome to tictactoe"));Object(o.render)(a.a.createElement(r,null),document.getElementById("root"))}},[[3,1,2]]]);
