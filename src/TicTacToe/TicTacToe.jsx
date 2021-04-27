@@ -9,17 +9,21 @@ export default function TicTacToe(props) {
   let [gridSize, setGridSize] = useState(3)
   let [winSize, setWinSize] = useState(3)
 
+  let changeGridSize = (e) => {
+    val = parseInt(e.target.value)
+    if (val < 3) {
+      val = 3
+    } else if (val > 7) {
+      val = 7
+    }
+    setGridSize(val)
+  }
+
   return (
     <div className='center'>
       <h1>
         Play with grid size {gridSize}
-        <input
-          min={3}
-          max={7}
-          type={'number'}
-          value={gridSize}
-          onChange={(e) => setGridSize(parseInt(e.target.value))}
-        />
+        <input min={3} max={7} type={'number'} value={gridSize} onChange={changeGridSize} />
       </h1>
       <h1>Connect {winSize} to win</h1>
       <Grid key={gridSize} gridSize={gridSize} winSize={winSize} />
