@@ -9,8 +9,12 @@ export default function TicTacToe(props) {
   let [gridSize, setGridSize] = useState(3)
   let [winSize, setWinSize] = useState(3)
 
-  let changeGridSize = (e) => {
-    val = parseInt(e.target.value)
+  function changeGridSize(e) {
+    if (!e.target.value) {
+      setGridSize(3)
+      return
+    }
+    let val = parseInt(e.target.value)
     if (val < 3) {
       val = 3
     } else if (val > 7) {
